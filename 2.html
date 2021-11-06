@@ -1,0 +1,14 @@
+<html>
+    <body>
+        <input id="text" type="text" value="hello">
+        <button id="btn" onclick="func()">click</button>
+        <h1 id="h1">Hello World</h1>
+        <img id="img" src="https://cdn.pixabay.com/photo/2021/11/02/15/30/tealights-6763542__340.jpg">
+        <script>
+            function func() {
+                var text = document.getElementById('text').value;
+                document.getElementById('img').src = text;
+            }
+        </script>
+    </body>
+</html>
