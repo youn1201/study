@@ -1,0 +1,32 @@
+<html>
+    <body>
+        <label>
+            <input type="radio" name="test" onchange="func(this);" value="1">
+            Select 1
+        </label>
+        <label>
+            <input type="radio" name="test" onchange="func(this);" value="2">
+            Select 2
+        </label>
+        <label>
+            <input type="radio" name="test" onchange="func(this);" value="3">
+            Select 3
+        </label>
+        <h1 id="h1">SELCT</h1>
+        <script>
+            function func(radio) {
+                switch(radio.value) {
+                    case '1':
+                        document.getElementById('h1').innerHTML = '1 selected';
+                        break;
+                    case '2':
+                        document.getElementById('h1').innerHTML = '2 selected';
+                        break;
+                    case '3':
+                        document.getElementById('h1').innerHTML = '3 selected';
+                        break;
+                }
+            }
+        </script>
+    </body>
+</html>
