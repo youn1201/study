@@ -1,0 +1,15 @@
+<html>
+    <body>
+        <input type="text" id="key">
+        <input type="text" id="value">
+        <button id="btn">+</button>
+        <script>
+            var g_obj = {};
+            document.getElementById('btn').addEventListener('click', function() {
+                var key = document.getElementById('key').value;
+                var value = document.getElementById('value').value;
+                g_obj[key] = value;
+            });
+        </script>
+    </body>
+</html>

@@ -2,12 +2,12 @@
     <body>
         <input id="text" type="text" value="hello">
         <button id="btn" onclick="func()">click</button>
-        <h1 id="h1">Hello World</h1>
-        <img id="img" src="https://cdn.pixabay.com/photo/2021/11/02/15/30/tealights-6763542__340.jpg">
+        <img id="img" src="https://cdn.pixabay.com/photo/2021/09/15/15/48/seals-6627197__340.jpg">
         <script>
             function func() {
-                var text = document.getElementById('text').value;
-                document.getElementById('img').src = text;
+                var val = document.getElementById('text').value;
+                var img = document.getElementById('img');
+                img.src = val;
             }
         </script>
     </body>
